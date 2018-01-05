@@ -1,0 +1,31 @@
+{
+  "name": "rite",
+  "version": "0.0.1",
+  "description": "Authorite's RITE token",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Authorite/rite.git"
+  },
+  "keywords": [
+    "authorite",
+    "rite",
+    "ethereum",
+    "token"
+  ],
+  "author": "Michał Kardyś",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Authorite/rite/issues"
+  },
+  "homepage": "https://github.com/Authorite/rite#readme",
+  "dependencies": {
+    "zeppelin-solidity": "^1.5.0"
+  }
+}
