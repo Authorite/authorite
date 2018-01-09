@@ -26,6 +26,10 @@
   },
   "homepage": "https://github.com/Authorite/rite#readme",
   "dependencies": {
+    "ethjs-util": "^0.1.4",
     "zeppelin-solidity": "^1.5.0"
+  },
+  "devDependencies": {
+    "solidity-coverage": "^0.4.8"
   }
 }

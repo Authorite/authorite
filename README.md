@@ -1,2 +1,2 @@
-# authorite
-certification service built on top of blockchain technology
+# rite 
+RITE ERC20 token and related contracts
