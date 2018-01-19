@@ -58,22 +58,61 @@ Governor can:
 * Verify authorities (by their SSL certificate; not present at the beginning).
 
 ## 2.2 Certificate Authorities
+It is contract containing issuers' data. Managed by supervisor contract holds methods for issuing and revoking certificates. Authority can administer only their own documents.
+
+Authority contract holds following data:
+* owner (organization's address)
+* supervisor's address
+* organization's website address
+* status (active/frozen)
+* list of certificates
+* (later on) trust score
 
 ### 2.2.A Creating certificates
+Issuer can create certificate contract by calling specific method in authority contract, providing needed data and paying for the transaction. Result is certificate contract with owner set to issuer address.
+
 ### 2.2.B Managing documents
+Authority holds ability to create, modify and delete its certificates, together with whom are these issued to.
 
 ## 2.3 Certificates
+Each certificate is separate contract holding data, list of entities it is issued to and methods for issuing/revoking document to an address (person, company or product).
+Additionally, it allows to easily check if given address is holder of certificate.  
+
+Certificates hold following data:
+* owner (Certificate Authority contract address)
+* name of document
+* (optional) description of document
+* subjects of certificate
 
 ## 2.4 Manager (user interface)
-### 2.4.A Issuers
-### 2.4.B People, companies, products
-### 2.4.C Trust rank
+It is web app integrated with blockchain. It uses MetaMask or similar technology to act as interface between smart contracts and end user. This app makes it easy for non-technical people to use the whole system, thus increasing adoption of technology.
+Using this interface users can explore certificates, authorities or subjects of certification using either email or wallet address to search for specific person. Later on, the system will include trust rank, indicating how legitimate an entity is.
+Apart from exploring the certificates, system exposes functionality of methods of Certificate Authority and Certificate contracts.
 
-## 2.5 Rite token
+### 2.4.A Issuers
+A dashboard for certificate authority. Allows to create new authority, edit its' owner and, what's more important, create new and manage existing certificates and their subjects.
+
+### 2.4.C Certificates, people, companies, products
+Explorer to search for entities present on the system. Together with filters, it allows to easily find and verify someone or something.
+
+### 2.4.D Trust rank
+Rank assigned to each individual entity, be it authority, certificate or subject of certification. It will be present in later versions of platform, as it's not yet determined whether the system will be internally developed or will be an external service.
+
+## 2.5 RITE token
+RITE is a crypto token being official currency of the platform. It's separate token and not any existing one to simplify transactions among the system and increase its portability. If there is better blockchain than Ethereum it would be easy to move with RITE token, finding and compensating all holders of this token within the new blockchain, meaning basically upgrading the system instead of building it from scratch.
+
 ### 2.5.A Properties
+RITE is ERC20 token with inflation 8% per year in first 3 year. Initially, 1 000 000 will be minted. After each dividends are distributed, next batch will be minted (2% of supply at the beginning of the year). There will be 4 batches each year, summing up to 8% increase per year. All newly minted coins will be spend on development of the platform.
+
 ### 2.5.B Distribution
+10% of initial supply will be distributed via airdrop. 20% will be sold (via ICO or regular sale, to be determined yet). Next 15% (plus 8% minted per year) will be spent for development.
+
 ### 2.5.C Dividends
+All profits gained from Authorite will be distributed amongst the shareholders. Shareholder is anyone holding any amount of RITE. Distribution will be proportional to the owned tokens. At the end of each quarter, system will calculate and set dividend as claimable. Tokens not distributed/ claimed will return into pool and be redistributed in next distribution process.
 
 ## 2.6 Validator
+It is functionality of autonomous validation of new and existing certificate authorities. It will be based on website address and SSL certificate, which holds easily accessible identification data.
+
+Validator is last requirement needed to transform Authorite into Decentralized Autonomous Organization.
 
 # 3. Limitations
