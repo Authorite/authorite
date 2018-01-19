@@ -1,4 +1,4 @@
-tak# Abstract
+# Abstract
 
 # 1. Introduction and proposal of value
 
@@ -33,22 +33,47 @@ Components are as follows:
 - **Verificator** - set of methods and guidelines to validate authority; it is meant to be manual at first, advancing into automated registration process,
 - **Rite token** - crypto token for transactions within the platform
 
+> DIAGRAM HERE
+
+
+
 ## 2.1 Supervisor
 
-# ...
-## I.1 Approval process
-## I.2 Organization capabilities
-# J. Certificate Authorities
-## J.1 Creating certificates
-## J.2 Managing documents
-# K. Certificates
-# M. Manager
-## M.1 Issuers
-## M.2 People or companies
-## M.3 Trust rank
-# N. Rite token
-## N.1 Properties
-## N.2 Distribution
-## N.3 Dividends
-# O. Validator
-# P. Limitations
+It is smart contract responsible for administrating certificate authorities. At first, supervisor will be governed by creator of Authorite. Later on, when development process is complete and system will allow to automatically accept or revoke new organizations, it will be transformed into decentralized autonomous organization (DAO).
+This contract manages issuers and not certificates themselves.
+
+### 2.1.A Approval process
+Process of verifying certificate authorities is based on a SSL certificate and website owned by authority.  
+In order to create new authority:
+1. Declarant opens new case by filling the form and paying application fee (if needed),
+2. Administrator reviews the application and, if there are more verification proofs needed, asks declarant to provide needed proofs,
+3. When ownership of a website is undoubtedly proven, new authority is created. Otherwise, no new authority is created.
+
+### 2.1.B Supervisor capabilities
+Governor can:
+* Create new certificate authorities,
+* Freeze/unfreeze existing authorities,
+* Transfer ownership of an authority,
+* Update organization's data,
+* Verify authorities (by their SSL certificate; not present at the beginning).
+
+## 2.2 Certificate Authorities
+
+### 2.2.A Creating certificates
+### 2.2.B Managing documents
+
+## 2.3 Certificates
+
+## 2.4 Manager (user interface)
+### 2.4.A Issuers
+### 2.4.B People, companies, products
+### 2.4.C Trust rank
+
+## 2.5 Rite token
+### 2.5.A Properties
+### 2.5.B Distribution
+### 2.5.C Dividends
+
+## 2.6 Validator
+
+# 3. Limitations
