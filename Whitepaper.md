@@ -1,8 +1,11 @@
+[logo]: https://github.com/Authorite/authorite/blob/master/whitepaper_images/Authorite_logo.png "Decentralized certification system"
+
+![Authorite][logo]
 # AUTHORITE
     DECENTRALIZED CERTIFICATION SYSTEM
 
     Author: Michał Kardyś (michal@solverforce.com)
-    20 January 2018
+    21 January 2018
 
 # Abstract
 
@@ -41,7 +44,7 @@ Components are as follows:
 - **Verificator** - set of methods and guidelines to validate authority; it is meant to be manual at first, advancing into automated registration process,
 - **Rite token** - crypto token for transactions within the platform
 
-> DIAGRAM HERE
+![Diagram of system components](https://github.com/Authorite/authorite/blob/master/whitepaper_images/Authorite_diagram.png "Diagram of system components")
 
 
 
