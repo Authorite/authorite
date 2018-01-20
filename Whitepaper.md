@@ -1,8 +1,16 @@
+# AUTHORITE
+    DECENTRALIZED CERTIFICATION SYSTEM
+
+    Author: Michał Kardyś (michal@solverforce.com)
+    20 January 2018
+
 # Abstract
+
+Quality and transparency are crucial parts of all certification processess. Simple system built on top of blockchain technology with smart contracts would allow to create better  certification systems that are based less on trust and more on facts. Authorite is decentralized platform designed to ease verification of certificate issuers and licensed entities. It solves problem of inability to check if certificates are legitimate. With this system anybody could easily verify whether document was issued to specific person, company or product. Another advantage is ability of checking if document issuer can be trusted and how many entities own same license.
 
 # 1. Introduction and proposal of value
 
-Certificates issued by organizations all over the world to companies or persons are always matter of trust. While these should serve as, for example, endorsement of mastering a skill, completion of academic program or quality assurance, it is not always possible to determine whether:
+Certificates issued by organizations all over the world to companies or persons are always based on trust. While these should serve as, for example, endorsement of mastering a skill, completion of academic program or quality assurance, it is not always possible to determine whether:
 1. issued certificate is genuine,
 2. certificate authority is influential,
 3. specific person owns particular certificate.
@@ -68,10 +76,10 @@ Authority contract holds following data:
 * list of certificates
 * (later on) trust score
 
-### 2.2.A Creating certificates
+### 2.2.A Certificate creation
 Issuer can create certificate contract by calling specific method in authority contract, providing needed data and paying for the transaction. Result is certificate contract with owner set to issuer address.
 
-### 2.2.B Managing documents
+### 2.2.B Document management
 Authority holds ability to create, modify and delete its certificates, together with whom are these issued to.
 
 ## 2.3 Certificates
