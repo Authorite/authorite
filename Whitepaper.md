@@ -1,4 +1,4 @@
-[logo]: https://github.com/Authorite/authorite/blob/master/whitepaper_images/Authorite_logo.png "Decentralized certification system"
+[logo]: https://github.com/Authorite/authorite/blob/master/whitepaper_images/Authorite_logo_small.png "Decentralized certification system"
 
 ![Authorite][logo]
 # AUTHORITE
