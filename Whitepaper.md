@@ -92,10 +92,10 @@ Apart from exploring the certificates, system exposes functionality of methods o
 ### 2.4.A Issuers
 A dashboard for certificate authority. Allows to create new authority, edit its' owner and, what's more important, create new and manage existing certificates and their subjects.
 
-### 2.4.C Certificates, people, companies, products
+### 2.4.B Certificates, people, companies, products
 Explorer to search for entities present on the system. Together with filters, it allows to easily find and verify someone or something.
 
-### 2.4.D Trust rank
+### 2.4.C Trust rank
 Rank assigned to each individual entity, be it authority, certificate or subject of certification. It will be present in later versions of platform, as it's not yet determined whether the system will be internally developed or will be an external service.
 
 ## 2.5 RITE token
@@ -105,14 +105,20 @@ RITE is a crypto token being official currency of the platform. It's separate to
 RITE is ERC20 token with inflation 8% per year in first 3 year. Initially, 1 000 000 will be minted. After each dividends are distributed, next batch will be minted (2% of supply at the beginning of the year). There will be 4 batches each year, summing up to 8% increase per year. All newly minted coins will be spend on development of the platform.
 
 ### 2.5.B Distribution
-10% of initial supply will be distributed via airdrop. 20% will be sold (via ICO or regular sale, to be determined yet). Next 15% (plus 8% minted per year) will be spent for development.
+Tokens will be distributed as follows:
+* 20% of initial supply will be spend on marketing (airdrop, rewards, bonuses),
+* 15% will be sold (via ICO or regular sale, to be determined yet),
+* 10% (plus amount of tokens minted per year) will be spent on development,
+* 55% will be held by creator, locked at first. 5/55 will be unlocked every 2 months.  
 
 ### 2.5.C Dividends
 All profits gained from Authorite will be distributed amongst the shareholders. Shareholder is anyone holding any amount of RITE. Distribution will be proportional to the owned tokens. At the end of each quarter, system will calculate and set dividend as claimable. Tokens not distributed/ claimed will return into pool and be redistributed in next distribution process.
 
 ## 2.6 Validator
-It is functionality of autonomous validation of new and existing certificate authorities. It will be based on website address and SSL certificate, which holds easily accessible identification data.
+It is functionality of autonomous validation of new and existing certificate authorities. It will be based on website address and SSL certificate, which holds easily accessible identification data. Validator will check both website's owner and SSL certificate issuer to verify whether certificate can be trusted and accepted automatically. Next, it will pull data of certificate.
 
 Validator is last requirement needed to transform Authorite into Decentralized Autonomous Organization.
 
 # 3. Limitations
+Platform is designed to promote high quality and useful certificates, however it will not replace common sense. It is meant to help in evaluation of given organization not to shift responsibility of thinking before cooperating with any entity inside the system. While system will try to hunt down and freeze dishonest issuers, it is possible that some of these will not be frozent upfront.
+It might be possible to create similar named organization. Best practice is to always verify issuer, besides trust rank.
