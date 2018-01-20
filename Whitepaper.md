@@ -11,17 +11,17 @@ Quality and transparency are crucial parts of all certification processess. Simp
 # 1. Introduction and proposal of value
 
 Certificates issued by organizations all over the world to companies or persons are always based on trust. While these should serve as, for example, endorsement of mastering a skill, completion of academic program or quality assurance, it is not always possible to determine whether:
-1. issued certificate is genuine,
-2. certificate authority is influential,
-3. specific person owns particular certificate.
+1. emitted certificate is genuine,
+2. issuing organization is reliable,
+3. particular person owns given certificate.
 
-Some authorities allow to validate a person or business holds given certificate. It is partial solution, because it is neither scalable nor all institutions allow such verification making it complicated to check specific entity being subject of such document.
+Some issuers allow to validate a person or business holds given certificate. It is partial solution, because it is neither scalable nor all institutions allow such verification. It makes checking an entity being subject of such document complicated.
 
-With current state of technology it is often easy to counterfeit a cerificate, be it via photo manipulation or injection of data into existing serivce. Every accreditation bases on trust between parties. Next, it takes time to verify subject across spread databases holding certificate data.
+With current state of technology it is often easy to counterfeit a certificate, be it via photo manipulation or injection of data into existing serivce. Every accreditation bases on trust between parties. Next, it takes time to verify subject across spread databases holding certificate data if there is need to check someone against all owned certificates.
 
-To overcome these threats there is a need for an organization monitoring certification authorities. Any centralized supervisor would suffer from trust based model. However, with rise of blockchain technology, smart contracts and decentralized autonomous organizations, it is possible to build transparent system that is not based on trust.
+To overcome these threats there is a need for an organization monitoring certification authorities. Any centralized supervisor would suffer from trust based model. However, with rise of blockchain technology, smart contracts and decentralized autonomous organizations, it is possible to build transparent system that is based on facts instead of trust.
 
-This paper presents a solution, certification monitoring system minimizing trust issues accompanying current state of certifications. The system is:
+This paper presents a solution, certification supervisor, which minimizes trust issues accompanying current state of certifications. The system is:
 - **transparent** - data is easily accessible,
 - **secure** - protected by cryptographic proof,
 - **practical** - enhances utility of certificates,
@@ -37,7 +37,7 @@ Components are as follows:
 - **Authority** - certificate issuer registered which positively completed supervisor's verification process; able to issue or revoke its own certificates,
 - **Certificate** - smart contracts holding data of a document and its recipient (Ethereum address); allows to verify whether entity is rightful owner,
 - **Manager** - interface between blockchain and end-user; simplifies exploration and issuance,
-- **Ranking** - subsystem for scoring certificates and authorities, calculating impact and quality factor of entities,
+- **Ranking** - subsystem for scoring certificates and authorities; calculates impact and quality factor of entities,
 - **Verificator** - set of methods and guidelines to validate authority; it is meant to be manual at first, advancing into automated registration process,
 - **Rite token** - crypto token for transactions within the platform
 
@@ -51,7 +51,7 @@ It is smart contract responsible for administrating certificate authorities. At 
 This contract manages issuers and not certificates themselves.
 
 ### 2.1.A Approval process
-Process of verifying certificate authorities is based on a SSL certificate and website owned by authority.  
+Process of verifying certificate issuers is based on a SSL certificate and website owned by authority.  
 In order to create new authority:
 1. Declarant opens new case by filling the form and paying application fee (if needed),
 2. Administrator reviews the application and, if there are more verification proofs needed, asks declarant to provide needed proofs,
