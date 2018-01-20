@@ -1,7 +1,7 @@
 {
-  "name": "rite",
+  "name": "authorite",
   "version": "0.0.1",
-  "description": "Authorite's RITE token",
+  "description": "decentralized certification system",
   "main": "truffle-config.js",
   "directories": {
     "test": "test"
