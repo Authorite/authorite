@@ -117,7 +117,7 @@ RITE is ERC20 token with inflation 8% per year in first 3 year. Initially, 1 000
 
 ### 2.5.B Distribution
 Tokens will be distributed as follows:
-* 20% of initial supply will be spend on marketing (airdrop, rewards, bonuses),
+* 20% of initial supply will be spend on marketing (airdrop, rewards, bounties, bonuses),
 * 15% will be sold (via ICO or regular sale, to be determined yet),
 * 10% (plus amount of tokens minted per year) will be spent on development,
 * 55% will be held by creator, locked at first. 5/55 will be unlocked every 2 months.  
