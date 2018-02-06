@@ -113,7 +113,7 @@ Rank assigned to each individual entity, be it authority, certificate or subject
 RITE is a crypto token being official currency of the platform. It's separate token and not any existing one to simplify transactions among the system and increase its portability. If there is better blockchain than Ethereum it would be easy to move with RITE token, finding and compensating all holders of this token within the new blockchain, meaning basically upgrading the system instead of building it from scratch.
 
 ### 2.5.A Properties
-RITE is ERC20 token with inflation 8% per year in first 3 year. Initially, 1 000 000 will be minted. After each dividends are distributed, next batch will be minted (2% of supply at the beginning of the year). There will be 4 batches each year, summing up to 8% increase per year. All newly minted coins will be spend on development of the platform.
+RITE is ERC20 compatible token (ERC827, as it allows to transfer data together with token transfer) with inflation 8% per year in first 3 year. Initially, 1 000 000 will be minted. After each dividends are distributed, next batch will be minted (2% of supply at the beginning of the year). There will be 4 batches each year, summing up to 8% increase per year. All newly minted coins will be spend on development of the platform.
 
 ### 2.5.B Distribution
 Tokens will be distributed as follows:
