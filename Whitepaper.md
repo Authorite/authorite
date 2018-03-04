@@ -131,5 +131,5 @@ It is functionality of autonomous validation of new and existing certificate aut
 Validator is last requirement needed to transform Authorite into Decentralized Autonomous Organization.
 
 # 3. Limitations
-Platform is designed to promote high quality and useful certificates, however it will not replace common sense. It is meant to help in evaluation of given organization not to shift responsibility of thinking before cooperating with any entity inside the system. While system will try to hunt down and freeze dishonest issuers, it is possible that some of these will not be frozent upfront.
+Platform is designed to promote high quality and useful certificates. It will not replace common sense. It is meant to help to verify given organization. Not to shift responsibility of thinking before cooperating with anyone inside the system but to create environment to ease verification of caertificates. While system will try to hunt down and freeze dishonest issuers, it is possible that some of them will not be frozent upfront.
 It might be possible to create similar named organization. Best practice is to always verify issuer, besides trust rank.
